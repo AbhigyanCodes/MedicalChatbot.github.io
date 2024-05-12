@@ -1,0 +1,99 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .container {
+    width: 600px;
+    height: 450px;
+    /*background-color: blue;*/
+    /*border: 1px solid red;*/
+    margin: auto;
+    margin-top: calc(50vh - 225px);
+    display: flex;
+    flex-direction: row;
+  }
+  .image {
+      width: 300px;
+      height: 450px;
+      /*border: 1px solid yellow;*/
+  
+  }
+  .image > img {
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+  }
+  .desc {
+      background-color: white ;
+      width: 300px;
+      height: 450px;
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px;
+      padding-top: 35px;
+      padding-left: 32px;
+      padding-right: 48px;  
+  }
+  .name {
+      color: hsl(228, 12%, 48%);
+      font-size: 9px;
+  }
+  .french {
+      font-family: 'Fraunces', serif;
+      font-size: 24px;
+      font-weight: 20px;
+      margin-top: 28px;
+  }
+  .text {
+      margin-top: 10px;
+      font-size: 12px;
+      font-weight: 500;
+      color: hsl(228, 12%, 48%);
+  }
+  .price {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 36px;
+      column-gap: 37px;
+  }
+  #disc {
+      font-family: 'Fraunces', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: hsl(158, 36%, 37%);
+  }
+  #actual {
+      font-family: 'Fraunces', serif;
+      font-size: 12px;
+      color: hsl(228, 12%, 48%);
+      text-decoration: line-through;
+  }
+  .btn {
+      display: flex;
+      flex-direction: row;
+      border: none;
+      background-color: hsl(158, 36%, 37%);
+      margin-top: 30px;
+      align-items: center;
+      justify-content: center;
+      column-gap: 12px;
+      height: 48px;
+      width: 238px;
+      border-radius: 8px;
+  }
+  .btn > p {
+      color: white;
+      font-size: 10px;
+  }

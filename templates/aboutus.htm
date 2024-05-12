@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="stylesheet" href="./style.css"></link>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('AboutUsPic.jpeg'); /* Replace with your image path */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .person-box {
+      width: 500px;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      border-radius: 8px;
+      transition: transform 0.3s ease-in-out;
+      margin: 50px; /* Increased gap between boxes */
+    }
+
+    .person-box img {
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    .person-box:hover {
+      transform: scale(1.05);
+    }
+
+    h2 {
+      color: #2E7D32; /* Dark Green */
+    }
+
+    p {
+      color: #555; /* Dark Gray */
+    }
+
+    .details {
+      margin-top: 20px;
+    }
+
+    .contact {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .contact a {
+      color: #2E7D32; /* Dark Green */
+      text-decoration: none;
+      margin-top: 5px;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .back-box {
+      width: 100px;
+      padding: 10px;
+      background-color: #2E7D32; /* Dark Green */
+      color: #fff; /* White */
+      text-align: center;
+      border-radius: 8px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    .back-box:hover {
+      background-color: #1B5E20; /* Darker Green */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="person-box">
+      <img src="Abhigyan.jpg" alt="Abhigyan's Picture">
+      <h2>Abhigyan Patnaik</h2>
+      <p>A second year Electronics and Communication engineering student aspiring to do research in the field of Artificial Intelligence. Currently working on DSA and Web Development.</p>
+      <div class="details">
+        <div class="contact">
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/abhigyan-patnaik-288b65284" target="_blank">https://www.linkedin.com/in/abhigyan-patnaik-288b65284</a></p>
+          <p>Email: <a href="mailto:abhigyan22101@iiitnr.edu.in">abhigyan22101@iiitnr.edu.in</a></p>
+          <p>Mobile: +91 8588947010</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="person-box">
+      <img src="Arya.jpg" alt="Arya's Picture">
+      <h2>Arya Mahesh Bhiwapurkar</h2>
+      <p>A second year Data Science and Artificial Intelligence student aspiring to be a Software Development Engineer. Right now working on DSA and Web Development.</p>
+      <div class="details">
+        <div class="contact">
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/arya-mahesh-bhiwapurkar-b52577162/" target="_blank">https://www.linkedin.com/in/arya-mahesh-bhiwapurkar-b52577162/</a></p>
+          <p>Email: <a href="mailto:arya221020413@iiitnr.edu.in">arya221020413@iiitnr.edu.in</a></p>
+          <p>Mobile: +91 6263278107</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="back-box" onclick="window.location.href='index.htm'">
+    Back
+  </div>
+</body>
+</html>

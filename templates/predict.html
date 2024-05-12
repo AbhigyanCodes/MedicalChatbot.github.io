@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Disease Prediction</h1>
+
+    <form id="predictionForm" action="/" method="POST">
+        <label for="gender">Are you Male or Female?</label>
+        <input type="text" id="gender" name="gender" required>
+
+        <label for="fever">Do you have Fever? (Yes/No)</label>
+        <input type="text" id="fever" name="fever" required>
+
+        <label for="cough">Do you have Cough? (Yes/No)</label>
+        <input type="text" id="cough" name="cough" required>
+
+        <label for="fatigue">Do you have Fatigue? (Yes/No)</label>
+        <input type="text" id="fatigue" name="fatigue" required>
+
+        <label for="breathing">Do you have Difficulty Breathing? (Yes/No)</label>
+        <input type="text" id="breathing" name="breathing" required>
+
+        <label for="bloodPressure">What is your Blood Pressure level? (Low/Normal/High)</label>
+        <input type="text" id="bloodPressure" name="bloodPressure" required>
+
+        <label for="cholesterol">What is your Cholesterol Level? (Low/Normal/High)</label>
+        <input type="text" id="cholesterol" name="cholesterol" required>
+
+        <button type="submit">Predict Disease</button>
+    </form>
+
+    <div id="result">
+        <h2>Prediction Result</h2>
+        <p id="outputText">{{ res }}</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disease Information</title>
+  <link rel="stylesheet" href="./style.css"></link>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #4CAF50; /* Good shade of green */
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr); /* Five boxes in one row */
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      height: 180px;
+      padding: 20px;
+    }
+
+    .disease-box {
+      width: 200px;
+      height: 200px;
+      padding: 20px;
+      background-color: #FFA500; /* Good shade of orange */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-decoration: none;
+      color: #fff; /* White */
+    }
+
+    .disease-box:hover {
+      background-color: #FFD700; /* Lighter shade of orange on hover */
+    }
+
+    .back-link {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .back-box {
+      background-color: #3498db; /* Blue */
+      padding: 10px;
+      border-radius: 5px;
+      display: inline-block;
+      margin-bottom: 20px; /* Add margin to separate rows */
+    }
+
+    .back-link a {
+      color: #fff; /* White */
+      text-decoration: none;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="asthma.htm" class="disease-box">
+      <h1>Asthma</h1>
+    </a>
+    <a href="hypertension.htm" class="disease-box">
+      <h1>Hypertension</h1>
+    </a>
+    <a href="diabetes.htm" class="disease-box">
+      <h1>Diabetes</h1>
+    </a>
+    <a href="alzheimer's.htm" class="disease-box">
+      <h1>Alzheimer's</h1>
+    </a>
+    <a href="cancer.htm" class="disease-box">
+      <h1>Cancer</h1>
+    </a>
+  </div>
+
+  <div class="container">
+    <a href="migraine.htm" class="disease-box">
+      <h1>Migraine</h1>
+    </a>
+    <a href="osteoporosis.htm" class="disease-box">
+      <h1>Osteoporosis</h1>
+    </a>
+    <a href="common_cold.htm" class="disease-box">
+      <h1>Common Cold</h1>
+    </a>
+    <a href="arthritis.htm" class="disease-box">
+      <h1>Arthritis</h1>
+    </a>
+    <a href="flu.htm" class="disease-box">
+      <h1>Flu</h1>
+    </a>
+
+  </div>
+
+  <div class="back-link">
+    <div class="back-box">
+      <a href="index.htm">BACK</a>
+    </div>
+  </div>
+</body>
+</html>
